@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cuartel de Área Técnica de Informática</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+    }
+
+    /* Logo */
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 80px;
+    }
+
+    /* Título parpadeante */
+    .titulo {
+      text-align: center;
+      font-size: 3em;
+      font-weight: bold;
+      margin-top: 30px;
+      animation: blinkColors 3s infinite;
+    }
+
+    @keyframes blinkColors {
+      0% { color: red; }
+      25% { color: blue; }
+      50% { color: green; }
+      75% { color: orange; }
+      100% { color: purple; }
+    }
+
+    /* Lista de materias */
+    .materias {
+      margin: 100px 0 0 150px;
+    }
+
+    .materia {
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .materia > .nombre {
+      cursor: pointer;
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+
+    /* Colores únicos para cada materia */
+    .color1 { color: #e63946; } /* rojo fuerte */
+    .color2 { color: #457b9d; } /* azul */
+    .color3 { color: #2a9d8f; } /* verde azulado */
+    .color4 { color: #f4a261; } /* naranja */
+    .color5 { color: #8d99ae; } /* gris azulado */
+    .color6 { color: #d62828; } /* rojo intenso */
+
+    /* Trimestres desplegables */
+    .trimestres {
+      display: none;
+      position: absolute;
+      background-color: #ffd1dc; /* Rosa pastel */
+      padding: 5px;
+      border-radius: 5px;
+      margin-left: 10px;
+      z-index: 1;
+      min-width: 120px;
+    }
+
+    .materia:hover .trimestres {
+      display: block;
+    }
+
+    .trimestre {
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 3px;
+      margin: 2px 0;
+      font-weight: 500;
+      text-align: center;
+      user-select: none;
+    }
+
+    .trimestre:nth-child(1) { background-color: #ffb6c1; } /* rosa claro */
+    .trimestre:nth-child(2) { background-color: #ffc0cb; } /* rosa */
+    .trimestre:nth-child(3) { background-color: #ff69b4; } /* rosa fuerte */
+  </style>
+</head>
+<body>
+  <!-- Logo -->
+  <img src="https://i.imgur.com/weiuk33.jpeg" class="logo" alt="Logo Institucional" />
+
+  <!-- Título -->
+  <div class="titulo">Cuartel de Área Técnica de Informática</div>
+
+  <!-- Lista de materias -->
+  <div class="materias">
+    <div class="materia">
+      <div class="nombre color1">Diseño y Desarrollo Web</div>
+      <div class="trimestres">
+        <div class="trimestre" onclick="window.location.href='diseno-trimestre1.html'">Trimestre 1</div>
+        <div class="trimestre" onclick="alert('Contenido para Diseño y Desarrollo Web - Trimestre 2 aún no disponible')">Trimestre 2</div>
+        <div class="trimestre" onclick="alert('Contenido para Diseño y Desarrollo Web - Trimestre 3 aún no disponible')">Trimestre 3</div>
+      </div>
+    </div>
+
+    <div class="materia">
+      <div class="nombre color2">Sistemas Operativos y Redes</div>
+      <div class="trimestres">
+        <div class="trimestre" onclick="alert('Contenido para Sistemas Operativos y Redes - Trimestre 1 aún no disponible')">Trimestre 1</div>
+        <div class="trimestre" onclick="alert('Contenido para Sistemas Operativos y Redes - Trimestre 2 aún no disponible')">Trimestre 2</div>
+        <div class="trimestre" onclick="alert('Contenido para Sistemas Operativos y Redes - Trimestre 3 aún no disponible')">Trimestre 3</div>
+      </div>
+    </div>
+
+    <div class="materia">
+      <div class="nombre color3">Soporte Técnico</div>
+      <div class="trimestres">
+        <div class="trimestre" onclick="alert('Contenido para Soporte Técnico - Trimestre 1 aún no disponible')">Trimestre 1</div>
+        <div class="trimestre" onclick="alert('Contenido para Soporte Técnico - Trimestre 2 aún no disponible')">Trimestre 2</div>
+        <div class="trimestre" onclick="alert('Contenido para Soporte Técnico - Trimestre 3 aún no disponible')">Trimestre 3</div>
+      </div>
+    </div>
+
+    <div class="materia">
+      <div class="nombre color4">Programación y Base de Datos</div>
+      <div class="trimestres">
+        <div class="trimestre" onclick="alert('Contenido para Programación y Base de Datos - Trimestre 1 aún no disponible')">Trimestre 1</div>
+        <div class="trimestre" onclick="alert('Contenido para Programación y Base de Datos - Trimestre 2 aún no disponible')">Trimestre 2</div>
+        <div class="trimestre" onclick="alert('Contenido para Programación y Base de Datos - Trimestre 3 aún no disponible')">Trimestre 3</div>
+      </div>
+    </div>
+
+    <div class="materia">
+      <div class="nombre color5">FOL</div>
+      <div class="trimestres">
+        <div class="trimestre" onclick="alert('Contenido para FOL - Trimestre 1 aún no disponible')">Trimestre 1</div>
+        <div class="trimestre" onclick="alert('Contenido para FOL - Trimestre 2 aún no disponible')">Trimestre 2</div>
+        <div class="trimestre" onclick="alert('Contenido para FOL - Trimestre 3 aún no disponible')">Trimestre 3</div>
+      </div>
+    </div>
+
+    <div class="materia">
+      <div class="nombre color6">Aplicaciones Ofimáticas</div>
+      <div class="trimestres">
+        <div class="trimestre" onclick="alert('Contenido para Aplicaciones Ofimáticas - Trimestre 1 aún no disponible')">Trimestre 1</div>
+        <div class="trimestre" onclick="alert('Contenido para Aplicaciones Ofimáticas - Trimestre 2 aún no disponible')">Trimestre 2</div>
+        <div class="trimestre" onclick="alert('Contenido para Aplicaciones Ofimáticas - Trimestre 3 aún no disponible')">Trimestre 3</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+ 
+</body>
+</html>
